@@ -1,0 +1,313 @@
+@use "./variables";
+@use './images';
+@use './shirts.scss';
+
+.whitetext {
+    color: variables.$textcolor;
+}
+
+@mixin bluecolor {
+    color: variables.$headercolor;
+}
+
+@mixin blueheader {
+    background-color: variables.$headercolor;
+}
+
+@mixin boldtext {
+    font-family: variables.$boldtext;
+}
+
+@mixin lightext {
+    font-family: variables.$lightext;
+}
+
+@mixin box {
+    width: 250px;
+    height: 400px;
+    @include blueheader();
+}
+
+.banner {
+    height: 600px;
+    background-image: url(variables.$imagepath + "/Bridgebanner.jpg");
+    background-size: cover;
+}
+
+.banner-text {
+    @include bluecolor();
+    font-size: 10rem;
+    font-family: Righteous, sans-serif;
+    text-align: center;
+    position: relative;
+    top: 25%;
+    z-index: 2;
+}
+
+header-component .navbar-brand {
+    position: absolute;
+    left: 50%;
+    text-align: center;
+    font-family: Righteous, sans-serif;
+    font-size: 30px;
+    @include bluecolor();
+}
+
+.navibox {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 300px 300px;
+    grid-gap: 5px;
+    padding: 10px;
+    justify-content: center;
+  }
+  
+.navibox > div {
+    @include blueheader();
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    @include blueheader();
+    @extend .whitetext;
+}
+
+footer-component .footer-logo {
+    font-family: Righteous, sans-serif;
+    font-size: 5rem;
+}
+
+footer-component .footer-nav {
+    list-style-position: inside;
+    list-style: none;
+}
+
+.ex-box, .deal-box {
+    @include box()
+}
+
+.ex-text {
+    font-family: FuturaHeavy, sans-serif;
+    @include bluecolor();
+    font-size: 36px;
+    text-indent: 6.2rem;
+    text-transform: uppercase;
+}
+
+.ex-box .des-box {
+    position: absolute;
+    width: 225px;
+    margin: auto;
+    margin-top: 20%;
+    background: variables.$textcolor;
+    padding: 15px;
+    @include bluecolor();
+    font-size: 16px;
+    margin-left: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    @include boldtext();
+    font-weight: 700;
+}
+
+@mixin line-break {
+    content: "\A";
+    white-space: pre;
+}
+
+.newsletter p span::before, .clothes-banner span::before {
+    @include line-break();
+}
+
+@mixin button {
+    border-radius: 12.5px;
+}
+
+input[type=email] {
+    @include button();
+    border: 0.1px solid black;
+    padding: 25px 3rem;
+}
+
+.newsletter .btn-submit  {
+    @extend .whitetext;
+    @include blueheader();
+    text-transform: uppercase;
+    @include boldtext();
+    font-size: 25px;
+    @include button();
+    padding: 20px 3rem;
+}
+
+.clothes-banner {
+    @extend .whitetext;
+}
+
+.clothes-banner .btn-clothes {
+    padding: 10px 5rem;
+    background: variables.$textcolor;
+    @include bluecolor();
+    text-transform: uppercase;
+    font-family: FuturaHeavy, sans-serif;
+    font-weight: 900;
+    font-size: 25px;
+    font-variant: small-caps;
+    border-radius: 12.5px;
+}
+
+.discount-text, .clothes-text h3 {
+    @include boldtext();
+    color: variables.$textcolor;
+    font-weight: 700;
+    text-shadow: 0px 3.5px 2px rgba(0, 0, 0, 0.75);
+}
+
+.discount-text h1, .clothes-text h3 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+footer-component .footer-nav {
+    @include lightext();
+    font-size: 18px;
+}
+
+.clothes-text p, .news p {
+    @include lightext();
+    font-size: 17.5px;
+}
+
+.news p {
+    margin-top: -10px;
+    line-height: 20px;
+}
+
+.newsletter .news {
+    padding-left: 15rem;
+}
+
+.dis-text {
+    background-color: variables.$textcolor;
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 12.5%;
+    padding: 0.5px 5px;
+    font-size: 17px;
+    color: #E96363;
+   @include lightext();
+   padding-bottom: 5px;
+}
+
+.deal-text {
+    font-family: 'Spartan', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.deal-text p:nth-child(2) {
+    margin-top: -20px;
+}
+
+.slash-text {
+    color: #8F8585;
+    font-size: 12.5px;
+    text-decoration: line-through;
+}
+
+.news h3 {
+    font-family: FuturaHeavy, sans-serif;
+    @include bluecolor();
+    text-transform: uppercase;
+}
+
+.deals h2 {
+    @include boldtext();
+    @include bluecolor();
+    text-indent: 6rem;
+}
+
+.deals p {
+    @include boldtext();
+    font-size: 17.5px;
+}
+.copy-text {
+    @include boldtext();
+}
+
+.navibox span {
+    background-color: variables.$textcolor;
+    position: absolute;
+    margin-top: 13.15rem;
+    text-align: start;
+    @include lightext();
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 1rem 5rem;
+}
+
+.navibox div:nth-child(1) span, .navibox div:nth-child(3) span {
+    margin-left: -9.35rem;
+}
+
+.navibox div:nth-child(2) span {
+    margin-left: -3.9rem;
+}
+
+.navibox div:nth-child(4) span {
+    padding: 1rem 2rem;
+    margin-left: -4.5rem;
+}
+
+header-component .navbar-nav a {
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+header-component .nav-item {
+    padding: 3px 5px 0px;
+}
+
+header-component .navbar-nav div {
+    text-transform: uppercase;
+}
+
+header-component .navbar-nav i {
+    font-size: 22.5px;
+}
+
+input[type=text], .clicked {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100px;  
+    transition: width .5s ease-in-out;
+    margin-bottom: 0.6em;
+    &::-webkit-input-placeholder {
+        color: transparent;
+      }
+}
+
+input[type=text]:focus, .clicked {
+    &::-webkit-input-placeholder {
+       color: black;
+       -webkit-transition: color 0.2s ease;
+       transition: color 0.2s ease;
+       font-family: 'Jost', sans-serif;
+       font-weight: 500;
+    }
+    width: 200px;
+    box-shadow: none;
+    outline: none;
+}
+
+.shirt .btn-cart {
+    @include blueheader();
+    border-radius: 30px;
+    text-transform: uppercase;
+    @extend .whitetext;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: 500;
+}

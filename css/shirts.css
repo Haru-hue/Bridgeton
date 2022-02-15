@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&family=Spartan:wght@400;500;600;700&display=swap");
+@font-face {
+  src: url("../fonts/Righteous-Regular.ttf");
+  font-family: Righteous;
+}
+@font-face {
+  src: url("../fonts/Futura Bold.otf");
+  font-family: FuturaBold;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer-component {
+  margin-top: auto;
+}
+
+@font-face {
+  font-family: FuturaHeavy;
+  src: url("../fonts/Futura Heavy font.ttf");
+}
+@font-face {
+  font-family: FuturaBook;
+  src: url("../fonts/Futura Book font.ttf");
+}
+@font-face {
+  font-family: FuturaMedium;
+  src: url("../fonts/Futura medium bt.ttf");
+}
+.quan {
+  position: relative;
+  top: -16%;
+  padding: 0px 30px;
+  margin-left: 4.6rem;
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=shirts.css.map */

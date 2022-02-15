@@ -1,0 +1,44 @@
+$headercolor: #063d55;
+$fontpath: "../fonts";
+$imagepath: "../images";
+$textcolor: #fff;
+$dark-overlay: linear-gradient(rgba(0,0, 0, 0.2),rgba(0, 0, 0, 0.2));
+$boldtext: FuturaBold, sans-serif;
+$lightext: FuturaBook, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&family=Spartan:wght@400;500;600;700&display=swap');
+
+@font-face {
+    // This is parsed as an interpolated special function.
+    src: url($fontpath + '/Righteous-Regular.ttf');
+    font-family: Righteous;
+}
+
+@font-face {
+    src: url($fontpath + "/Futura\ Bold.otf");
+    font-family: FuturaBold;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer-component {
+    margin-top: auto;
+}
+
+@font-face {
+    font-family: FuturaHeavy;
+    src: url($fontpath + "/Futura\ Heavy\ font.ttf");
+}
+
+@font-face {
+    font-family: FuturaBook;
+    src: url($fontpath + "/Futura\ Book\ font.ttf");
+}
+
+@font-face {
+    font-family: FuturaMedium;
+    src: url($fontpath + "/Futura\ medium\ bt.ttf");
+}

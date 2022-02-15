@@ -1,0 +1,84 @@
+@use './variables';
+
+@mixin center-image {
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin reposition {
+    background-position-x: 50%;
+    background-position-y: -1%;
+    background-size: cover;
+}
+
+.navibox > div:nth-child(1) {
+    background: variables.$dark-overlay, url(variables.$imagepath + "/WomenNav.png");
+    @include reposition()
+}
+
+.navibox > div:nth-child(2) {
+    background: variables.$dark-overlay, url(variables.$imagepath + "/MenNav.png");
+    @include reposition()
+}
+
+.navibox > div:nth-child(3) {
+    background: variables.$dark-overlay, url(variables.$imagepath + "/KidsNav.jpg");
+    @include reposition()
+}
+
+.navibox > div:nth-child(4) {
+    background: variables.$dark-overlay, url(variables.$imagepath + "/AccessoriesNav.png");
+    @include reposition()
+}
+
+#men-s {
+    background: variables.$dark-overlay, url(variables.$imagepath + "/MenSh.jpg");
+    @include center-image();
+}
+
+#men-u {
+    background: variables.$dark-overlay, url(variables.$imagepath + "/MenUnd.jpg");
+    @include center-image();
+}
+
+#women-s {
+    background: variables.$dark-overlay, url(variables.$imagepath + "/WomenSh.jpg");
+    @include center-image();
+}
+
+#women-u {
+    background: variables.$dark-overlay, url(variables.$imagepath + "/WomenUnd.png");
+    @include center-image();
+}
+
+.clothes-banner {
+    background-image: variables.$dark-overlay, url(variables.$imagepath + "/ExploreBanner.jpg");
+    @include center-image();
+    background-position-y: 4%;
+}
+
+.discount {
+    background-image: variables.$dark-overlay, url(variables.$imagepath + "/DiscountBan.jpg");
+    @include center-image();
+    background-position-y: calc(5%);
+}
+
+#blacks {
+    background-image: url(variables.$imagepath + "/BlackSweat.jpg");
+    @include center-image();
+}
+
+#whitet {
+    background-image: url(variables.$imagepath + "/White\ Top.jpg");
+    @include center-image();
+}
+
+#greyj {
+    background-image: url(variables.$imagepath + "/Grey\ Sweat.jpg");
+    @include center-image();
+}
+
+#redm {
+    background-image: url(variables.$imagepath + "/RedMuscle.jpg");
+    @include center-image();
+}

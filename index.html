@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href = "css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" />
+    <script src="components/header.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="components/main.js"></script>
+
+</head>
+<body>
+       <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.2/js/bootstrap.min.js"></script>
+    <header-component></header-component>
+    <section class = "banner container-fluid">
+        <div class = "banner-text">Bridgerton</div>
+    </section>
+    <section class = "navigation container-fluid">
+        <section class = "container">
+            <div class = "navibox">
+                <div><span>Women</span></div>
+                <div><span>Men</span></div>
+                <div><span>Kids</span></div>
+                <div><span>Accessories</span></div>
+            </div>
+        </section>
+    </section>
+
+    <section class = "clothes-banner container-fluid py-5 my-5">
+        <div class = "clothes-text pt-3 ps-5">
+            <h3>Wear the Best</h3>
+            <p class = "pt-5">Stylish clothes, Stylish lives</p>
+            <button class = "btn btn-clothes">Shop Guys</button>
+            <span><button class = "btn btn-clothes mt-2">Shop Girls</button></span>
+        </div>
+    </section>
+
+    <section class = "explore container-fluid pb-5">
+        <div class = "ex-text">Explore More</div>
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-lg-3">
+                    <div class = "ex-box" id="men-s">
+                       <div class = "des-box">
+                        Men's Shirts
+                       </div>
+                    </div>
+                </div>
+                <div class = "col-lg-3">
+                    <div class = "ex-box" id="men-u">
+                       <div class = "des-box">
+                        <div class = "des">Men's Underwear</div>
+                       </div>
+                    </div>
+                </div>
+                <div class = "col-lg-3">
+                    <div class = "ex-box" id="women-s">
+                       <div class = "des-box">
+                        <div class = "des">Women's Shirts</div>
+                       </div>
+                    </div>
+                </div>
+                <div class = "col-lg-3">
+                    <div class = "ex-box" id="women-u">
+                       <div class = "des-box">
+                        <div class = "des">Women's&nbsp;Underwear</div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class = "discount container-fluid py-5">
+        <div class = "discount-text text-center p-5">
+            <h1>New Year, New Sales</h1>
+            <h4>Huge discounts are happening right here</h4>
+        </div>
+    </section>
+
+    <section class = "deals container-fluid pt-5">
+       <div class = "pb-4">
+        <div class = "float-start ps-2">
+            <h2>Top Deals</h2>
+        </div>
+        <div class = "float-end pe-3">
+            <p>view more...</p>
+        </div>
+       </div>
+        <div class = "container pt-5">
+            <div class = "row">
+                <div class = "col-lg-3 col-md-6">
+                    <div class = "deal-box" id = "blacks">
+                        <div class = "dis-text">25% off</div>
+                    </div>
+                    <div class = "deal-text">
+                        <p>Black Sweater</p>
+                        <p>$49.99 <span class = "slash-text">$69.99</span></p>
+                    </div>
+                </div>
+                <div class = "col-lg-3 col-md-6">
+                    <div class = "deal-box" id="whitet">
+                        <div class = "dis-text">25% off</div>
+                    </div>
+                    <div class = "deal-text">
+                        <p>White Top</p>
+                        <p>$29.99 <span class = "slash-text">$39.99</span></p>
+                    </div>
+                </div>
+                <div class = "col-lg-3 col-md-6">
+                    <div class = "deal-box" id="greyj">
+                        <div class = "dis-text">50% off</div>
+                    </div>
+                    <div class = "deal-text">
+                        <p>Grey Jacket</p>
+                        <p>$59.99 <span class = "slash-text">$119.99</span></p>
+                    </div>
+                </div>
+                <div class = "col-lg-3 col-md-6">
+                    <div class = "deal-box" id="redm">
+                        <div class = "dis-text">50% off</div>
+                    </div>
+                    <div class = "deal-text">
+                        <p>Red Muscle Shirt</p>
+                        <p>$49.99 <span class = "slash-text">$99.99</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class = "newsletter container-fluid py-5 align-items-center">
+        <div class = "row p-5">
+            <div class = "col-lg-6 news">
+                <h3>The Bridgerton Society</h3>
+                <p>Never miss out on our amazing offers!<span>Sign up for our news letters today.</span></p>
+            </div>
+            <div class = "col-lg-6">
+                <div class = "form-group row">
+                    <div class = "col-xl-6">
+                        <input type="email" class="form-control" id="mail">
+                    </div>
+                    <div class = "col-lg-6">
+                        <button class="btn btn-submit">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer-component></footer-component>
+  
+</body>
+</html>
