@@ -113,19 +113,77 @@ footer-component {
   background-position: center;
 }
 
-#redm {
+#redm, #slider {
   background-image: url("../images/RedMuscle.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#slider {
+  height: 500px;
+  background-position-y: -0.05%;
+}
+
+#front-view {
+  background-image: url("../images/gallery-1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#back-view {
+  background-image: url("../images/gallery-3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#right-view {
+  background-image: url("../images/gallery-2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#full-view {
+  background-image: url("../images/gallery-4.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .quan {
   position: relative;
-  top: -16%;
-  padding: 0px 30px;
+  top: -10%;
+  padding: 0px 12.5px;
   margin-left: 4.6rem;
   border: 2px solid black;
   box-sizing: border-box;
+}
+
+.view {
+  display: grid;
+  grid-template-columns: 125px 125px 125px 125px;
+  grid-template-rows: 125px;
+  grid-column-gap: 12.5px;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+}
+
+.shirt .details, h3 {
+  font-family: FuturaHeavy, sans-serif;
+}
+
+.details h2 {
+  text-transform: uppercase;
+}
+
+.details i {
+  color: #063d55;
+  font-size: x-large;
+  padding: 10px;
+}
+
+.details h2 span {
+  color: red;
+  text-decoration: line-through;
+  font-size: large;
+  margin-top: -3;
 }
 
 .whitetext, .shirt .btn-cart, .clothes-banner, .newsletter .btn-submit, footer {

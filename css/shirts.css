@@ -29,13 +29,161 @@ footer-component {
   font-family: FuturaMedium;
   src: url("../fonts/Futura medium bt.ttf");
 }
+.navibox > div:nth-child(1) {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/WomenNav.png");
+  background-position-x: 50%;
+  background-position-y: -1%;
+  background-size: cover;
+}
+
+.navibox > div:nth-child(2) {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/MenNav.png");
+  background-position-x: 50%;
+  background-position-y: -1%;
+  background-size: cover;
+}
+
+.navibox > div:nth-child(3) {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/KidsNav.jpg");
+  background-position-x: 50%;
+  background-position-y: -1%;
+  background-size: cover;
+}
+
+.navibox > div:nth-child(4) {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/AccessoriesNav.png");
+  background-position-x: 50%;
+  background-position-y: -1%;
+  background-size: cover;
+}
+
+#men-s {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/MenSh.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#men-u {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/MenUnd.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#women-s {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/WomenSh.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#women-u {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/WomenUnd.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.clothes-banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/ExploreBanner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-position-y: 4%;
+}
+
+.discount {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/DiscountBan.jpg");
+  background-size: cover;
+  background-position: center;
+  background-position-y: 5%;
+}
+
+#blacks {
+  background-image: url("../images/BlackSweat.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#whitet {
+  background-image: url("../images/White Top.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#greyj {
+  background-image: url("../images/Grey Sweat.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#redm, #slider {
+  background-image: url("../images/RedMuscle.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#slider {
+  height: 500px;
+  background-position-y: -0.05%;
+}
+
+#front-view {
+  background-image: url("../images/gallery-1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#back-view {
+  background-image: url("../images/gallery-3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#right-view {
+  background-image: url("../images/gallery-2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#full-view {
+  background-image: url("../images/gallery-4.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 .quan {
   position: relative;
-  top: -16%;
-  padding: 0px 30px;
+  top: -10%;
+  padding: 0px 12.5px;
   margin-left: 4.6rem;
   border: 2px solid black;
   box-sizing: border-box;
+}
+
+.view {
+  display: grid;
+  grid-template-columns: 125px 125px 125px 125px;
+  grid-template-rows: 125px;
+  grid-column-gap: 12.5px;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+}
+
+.shirt .details, h3 {
+  font-family: FuturaHeavy, sans-serif;
+}
+
+.details h2 {
+  text-transform: uppercase;
+}
+
+.details i {
+  color: #063d55;
+  font-size: x-large;
+  padding: 10px;
+}
+
+.details h2 span {
+  color: red;
+  text-decoration: line-through;
+  font-size: large;
+  margin-top: -3;
 }
 
 /*# sourceMappingURL=shirts.css.map */

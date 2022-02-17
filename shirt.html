@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
     <script src="components/header.js"></script>
     <script src="components/footer.js"></script>
-    <script src="components/main.js"></script>
-
 </head>
 <body>
        <!-- Optional JavaScript -->
@@ -19,28 +17,29 @@
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.2/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
     <header-component></header-component>
    
     <section class = "shirt container-fluid">
         <div class = "container">
-            <div class = "row">
+            <div class = "row pt-5">
                 <div class = "col-lg-6">
-                    <div class = "shirt-box"></div>
+                    <div class = "shirt-box" id="slider"></div>
                     <div class = "view">
-                        <div id="back-view"></div>
-                        <div id = "front-view"></div>
-                        <div id="left-view"></div>
-                        <div id="right-view"></div>
+                        <div id = "front-view" onclick="changeImage1()"></div>
+                        <div id="back-view" onclick="changeImage()"></div>
+                        <div id="right-view" onclick="changeImage2()"></div>
+                        <div id="full-view" onclick="changeImage3()"></div>
                     </div>
                 </div>
-                <div class = "col-lg-6">
+                <div class = "col-lg-6 details">
                     <h2>Red Muscle Shirt</h2>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
-                    <h3>$49.99 <span>$69.99</span></h3>
+                    <h2 class = "pt-4">$49.99 <span>$69.99</span></h2>
                     <p>Size:</p>
                     <select class="sizes">
                         <option>S</option>
@@ -61,6 +60,6 @@
     </section>
 
     <footer-component></footer-component>
- 
+
 </body>
 </html>

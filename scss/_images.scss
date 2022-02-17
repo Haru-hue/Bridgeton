@@ -82,3 +82,29 @@
     background-image: url(variables.$imagepath + "/RedMuscle.jpg");
     @include center-image();
 }
+
+#slider {
+    height: 500px;
+    @extend #redm;
+    background-position-y: -0.05%;
+}
+
+#front-view {
+    background-image: url(variables.$imagepath + "/gallery-1.jpg");
+    @include center-image()
+}
+
+#back-view {
+    background-image: url(variables.$imagepath + "/gallery-3.jpg");
+    @include center-image()
+}
+
+#right-view {
+    background-image: url(variables.$imagepath + "/gallery-2.jpg");
+    @include center-image()
+}
+
+#full-view {
+    background-image: url(variables.$imagepath + "/gallery-4.jpg");
+    @include center-image()
+}
