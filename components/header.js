@@ -9,7 +9,7 @@ class Header extends HTMLElement {
       
         <header class = "container-fluid">
     <nav class = "navbar navbar-expand-lg d-flex">
-        <ul class="navbar-nav ps-5">
+        <ul class="navbar-nav d-none d-md-flex ps-5">
             <li class = "nav-item">
                 <a href = "404.html" class="nav-link">Top Deals</a>
             </li>

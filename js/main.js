@@ -4,25 +4,30 @@ $(document).ready(function(){
     for (i=1;i<=30;i++){
         select.append($('<option></option>').val(i).html(i))
     }
+
+    const thumbnails = document.querySelectorAll(".view > div");
+
+    const setBackground = function(event) {
+    const mainImage = document.getElementById("slider");
+        if (event.target && event.target.dataset.image) {
+          mainImage.style.backgroundImage = `url(${event.target.dataset.image})`;
+        }
+    }
+
+    for(const thumbnail of thumbnails) {
+      thumbnail.addEventListener("click", setBackground);
+    }
+
+    $(".sizes option").unwrap().each(function() {
+      var btn = $('<button class = "btn btn-option">' + $(this).text() + '</button>')
+      $(this).replaceWith(btn)
+  })
+
+  $(document).on('click', '.btn-option', function() {
+    $(".btn-option").removeClass("on");
+    $(this).addClass("on");
+})
 });
 
-//To change Images without the use of inline CSS, hopefully one day I will learn a better method
-function changeImage () {
-    var mainImage = document.getElementById("slider");
-    mainImage.style.backgroundImage = "url('./images/gallery-3.jpg')";
-}
 
-function changeImage1 () {
-    var mainImage = document.getElementById("slider");
-    mainImage.style.backgroundImage = "url('./images/gallery-1.jpg')";
-}
 
-function changeImage2 () {
-    var mainImage = document.getElementById("slider");
-    mainImage.style.backgroundImage = "url('./images/gallery-2.jpg')";
-}
-
-function changeImage3 () {
-    var mainImage = document.getElementById("slider");
-    mainImage.style.backgroundImage = "url('./images/gallery-4.jpg')";
-}

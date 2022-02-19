@@ -2,6 +2,11 @@
 @use './images';
 @use './shirts.scss';
 
+.deals a {
+    text-decoration: none;
+    color: black;
+}
+
 .whitetext {
     color: variables.$textcolor;
 }
@@ -307,7 +312,11 @@ input[type=text]:focus, .clicked {
     border-radius: 30px;
     text-transform: uppercase;
     @extend .whitetext;
-    padding: 15px 30px;
+    padding: 12.5px 25px;
     font-size: 20px;
     font-weight: 500;
+}
+
+*:focus {
+    box-shadow: none !important;
 }

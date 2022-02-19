@@ -150,9 +150,9 @@ footer-component {
 
 .quan {
   position: relative;
-  top: -10%;
+  top: -9%;
   padding: 0px 12.5px;
-  margin-left: 4.6rem;
+  margin-left: 6.5rem;
   border: 2px solid black;
   box-sizing: border-box;
 }
@@ -183,7 +183,33 @@ footer-component {
   color: red;
   text-decoration: line-through;
   font-size: large;
-  margin-top: -3;
+  margin-top: -3px;
+  position: absolute;
+  padding-left: 5px;
+}
+
+.rate p {
+  font-size: 22.5px;
+}
+
+.desc p {
+  font-family: FuturaBook, sans-serif;
+  font-size: 22.5px;
+}
+
+.shirt .btn-option {
+  border: 1px solid black;
+  border-radius: 50%;
+  font-size: 25px;
+  width: 70px;
+  height: 70px;
+  margin-left: 5px;
+}
+
+.shirt .btn-option.on {
+  background-color: #063d55;
+  color: #fff;
+  border: none;
 }
 
 /*# sourceMappingURL=shirts.css.map */

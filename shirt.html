@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product Details - Bridgeton </title>
     <link rel="stylesheet" href = "css/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
@@ -21,15 +21,15 @@
     <header-component></header-component>
    
     <section class = "shirt container-fluid">
-        <div class = "container">
+        <div class = "container rate">
             <div class = "row pt-5">
                 <div class = "col-lg-6">
                     <div class = "shirt-box" id="slider"></div>
                     <div class = "view">
-                        <div id = "front-view" onclick="changeImage1()"></div>
-                        <div id="back-view" onclick="changeImage()"></div>
-                        <div id="right-view" onclick="changeImage2()"></div>
-                        <div id="full-view" onclick="changeImage3()"></div>
+                        <div class = "thumbnail" id = "front-view" data-image="images/gallery-1.jpg"></div>
+                        <div class = "thumbnail" id="back-view" data-image="images/gallery-3.jpg"></div>
+                        <div class = "thumbnail" id="right-view" data-image="images/gallery-2.jpg"></div>
+                        <div class = "thumbnail" id="full-view" data-image="images/gallery-4.jpg"></div>
                     </div>
                 </div>
                 <div class = "col-lg-6 details">
@@ -40,7 +40,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                     <h2 class = "pt-4">$49.99 <span>$69.99</span></h2>
-                    <p>Size:</p>
+                    <p class="pt-5">Size:</p>
                     <select class="sizes">
                         <option>S</option>
                         <option>M</option>
@@ -53,13 +53,12 @@
                     <button class = "btn btn-cart">Add to cart</button>
                 </div>
             </div>
-            <h3>Product Details:</h3>
+            <div class = "desc pb-5">
+                <h3>Product Details:</h3>
             <p>Get and provide your summer wardrobe with a style upgrade with the Red Muscle Tshirt. Pair it with some shorts for morning workouts or a trouser for an evening out with the guys.</p>
-
+            </div>
         </div>
     </section>
-
     <footer-component></footer-component>
-
 </body>
 </html>
