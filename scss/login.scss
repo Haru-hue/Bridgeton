@@ -1,0 +1,48 @@
+@use './variables';
+
+.login .divider {
+    border-right: 1px solid grey;
+    height: 400px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
+@mixin bluecolor {
+    color: variables.$headercolor;
+}
+
+.login h3 {
+    font-family: variables.$boldtext;
+    text-transform: uppercase;
+    @include bluecolor();
+}
+
+.text h2 {
+    text-transform: capitalize;
+    font-family: 'Poppins', Helvetica, Arial, Verdana, sans-serif;
+    @include bluecolor();
+}
+
+.login input {
+    border: none;
+    border-bottom: 1px solid grey;
+    border-radius: 0;
+    appearance: none;
+    margin-top: 1.5rem;
+    width: 75%;
+    &::-webkit-input-placeholder {
+        font-family: variables.$lightext;
+        text-transform: uppercase;
+        text-align: start;
+        font-size: 12.5px;
+    }
+}
+
+.register input {
+    width: 50%;
+}
+
+.login input:focus {
+    box-shadow: none;
+    outline: none;
+}

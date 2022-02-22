@@ -108,3 +108,7 @@
     background-image: url(variables.$imagepath + "/gallery-4.jpg");
     @include center-image()
 }
+
+.error img {
+    width: 300px;
+}

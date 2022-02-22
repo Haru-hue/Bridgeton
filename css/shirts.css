@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&family=Spartan:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&family=Spartan:wght@400;500;600;700&family=Poppins:wght@400;500;600isplay=swap");
 @font-face {
   src: url("../fonts/Righteous-Regular.ttf");
   font-family: Righteous;
@@ -146,6 +146,10 @@ footer-component {
   background-image: url("../images/gallery-4.jpg");
   background-size: cover;
   background-position: center;
+}
+
+.error img {
+  width: 300px;
 }
 
 .quan {
