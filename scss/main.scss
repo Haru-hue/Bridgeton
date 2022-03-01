@@ -2,6 +2,8 @@
 @use './images';
 @use './shirts.scss';
 @use './login.scss';
+@use './responsive';
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700');
 
 .deals a {
     text-decoration: none;
@@ -34,6 +36,11 @@
     @include blueheader();
 }
 
+body, html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .banner {
     height: 600px;
     background-image: url(variables.$imagepath + "/Bridgebanner.jpg");
@@ -50,7 +57,7 @@
     z-index: 2;
 }
 
-header-component .navbar-brand {
+.navbar-brand {
     margin: auto;
     text-align: center;
     font-family: Righteous, sans-serif;
@@ -180,7 +187,7 @@ footer-component .footer-nav {
 
 .clothes-text p, .news p {
     @include lightext();
-    font-size: 17.5px;
+    font-size: 20px;
 }
 
 .news p {
@@ -226,7 +233,7 @@ footer-component .footer-nav {
     text-transform: uppercase;
 }
 
-.deals h2 {
+.deal h2 {
     @include boldtext();
     @include bluecolor();
     text-indent: 6rem;
@@ -243,7 +250,7 @@ footer-component .footer-nav {
 .navibox span {
     background-color: variables.$textcolor;
     position: absolute;
-    margin-top: 13.15rem;
+    margin-top: 13.35rem;
     text-align: start;
     @include lightext();
     font-size: 25px;
@@ -252,16 +259,16 @@ footer-component .footer-nav {
 }
 
 .navibox div:nth-child(1) span, .navibox div:nth-child(3) span {
-    margin-left: -9.35rem;
+    margin-left: -9.5rem;
 }
 
 .navibox div:nth-child(2) span {
-    margin-left: -3.9rem;
+    margin-left: -3.85rem;
 }
 
 .navibox div:nth-child(4) span {
     padding: 1rem 2rem;
-    margin-left: -4.5rem;
+    margin-left: -4.3rem;
 }
 
 header-component .navbar-nav a {
@@ -323,4 +330,8 @@ header-component .navbar-nav i {
 
 *:focus {
     box-shadow: none !important;
+}
+
+.des span {
+    white-space: nowrap;
 }

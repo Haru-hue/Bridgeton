@@ -8,8 +8,8 @@ class Header extends HTMLElement {
       this.innerHTML = `
       
         <header class = "container-fluid">
-    <nav class = "navbar navbar-expand-lg d-flex">
-        <ul class="navbar-nav d-none d-md-flex ps-5">
+    <nav class = "navbar navbar-expand d-flex">
+        <ul class="navbar-nav ps-lg-5">
             <li class = "nav-item">
                 <a href = "404.html" class="nav-link">Top Deals</a>
             </li>
@@ -21,13 +21,13 @@ class Header extends HTMLElement {
             </li>
         </ul>
         <a href = "index.html" class = "navbar-brand">Bridgerton</a>
-        <ul class="navbar-nav ms-auto pe-5">
+        <ul class="navbar-nav ms-auto pe-lg-5">
             <input type="text" placeholder="Search" id="bar">
             <li class = "nav-item">
                 <i class="fas fa-search pt-2" id="search-bar" onclick="foo()"></i>
             </li>
             <li class = "nav-item">
-                <a href = "login.html" class="nav-link"><div>Sign in</div></a>
+                <a href = "login.html" class="nav-link" id="sign-in"><div>Sign in</div></a>
             </li>
             <li class = "nav-item">
                 <i class="fas fa-shopping-bag pt-2"></i>
