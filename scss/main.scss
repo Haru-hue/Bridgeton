@@ -3,7 +3,7 @@
 @use './shirts.scss';
 @use './login.scss';
 @use './responsive';
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&family=Poppins:wght@400;500;700');
 
 .deals a {
     text-decoration: none;
@@ -334,4 +334,13 @@ header-component .navbar-nav i {
 
 .des span {
     white-space: nowrap;
+}
+
+.text {
+    font-family: 'Poppins', sans-serif;
+}
+
+.text h2 {
+    text-transform: capitalize;
+    @include bluecolor();
 }

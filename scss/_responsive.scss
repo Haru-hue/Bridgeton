@@ -22,13 +22,36 @@
     footer-component footer .footer-logo {
         font-size: 4rem;
     }
+    .shirt .btn-option {
+        font-size: 15px;
+        padding-right: 5rem;
+        border-radius: unset;
+    }
+    
+    .shirt .btn-option:nth-child(1)::before {
+        content: "Small";
+    }
 }
 
 @media only screen and (max-width:600px) {
+    .shirt .btn-option:nth-child(4), .shirt .btn-option:nth-child(5) {
+        margin-top: 5px;
+    }
     header-component .navbar-nav .nav-link, header-component .navbar-nav .nav-item i {
         font-size: 2.75vw;
     }
-    header-component .navbar-brand {
+    .login .divider {
+        height: unset;
+        margin: unset;
+        border: unset;
+    }
+    .login .input {
+        width: 100% !important;
+    }
+    .register {
+        padding-bottom: 2rem;
+    }
+    header-component  .navbar-brand {
         font-size: 5vw;
         margin-right: 3rem;
         padding: 0;
@@ -223,13 +246,6 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .explore .row, .deals .row {
-        --bs-gutter-x: 7.5rem;
-        margin-left: calc(var(--bs-gutter-x) * -1.25);
-    }
-    .deals .dis-text {
-        margin-left: 13.5%;
-    }
     @media screen and (min-width: 992px) {
         .deals .deal h2 ,.explore .ex-text {
             text-indent: unset;
@@ -237,6 +253,14 @@
         .newsletter .row .news {
             padding-left: 8rem;
         }
+        .explore .row, .deals .row {
+            --bs-gutter-x: 3.5rem;
+            margin-left: calc(var(--bs-gutter-x) * -1.25);
+        }
+        .des-box .des span {
+            white-space: unset;
+        }
+        
     }
 }
 
@@ -249,5 +273,12 @@
     }
     .newsletter .row .news {
         padding-left: 10rem;
+    }
+    
+    .register input {
+        width: 50%;
+    }
+    header-component .navbar-brand {
+        font-size: 30px;
     }
 }

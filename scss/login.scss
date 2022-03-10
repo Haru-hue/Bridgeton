@@ -17,12 +17,6 @@
     @include bluecolor();
 }
 
-.text h2 {
-    text-transform: capitalize;
-    font-family: 'Poppins', Helvetica, Arial, Verdana, sans-serif;
-    @include bluecolor();
-}
-
 .login input {
     border: none;
     border-bottom: 1px solid grey;
@@ -36,10 +30,6 @@
         text-align: start;
         font-size: 12.5px;
     }
-}
-
-.register input {
-    width: 50%;
 }
 
 .login input:focus {

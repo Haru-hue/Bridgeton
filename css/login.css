@@ -41,12 +41,6 @@ footer-component {
   color: #063d55;
 }
 
-.text h2 {
-  text-transform: capitalize;
-  font-family: "Poppins", Helvetica, Arial, Verdana, sans-serif;
-  color: #063d55;
-}
-
 .login input {
   border: none;
   border-bottom: 1px solid grey;
@@ -60,10 +54,6 @@ footer-component {
   text-transform: uppercase;
   text-align: start;
   font-size: 12.5px;
-}
-
-.register input {
-  width: 50%;
 }
 
 .login input:focus {
