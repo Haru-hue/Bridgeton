@@ -283,10 +283,6 @@ footer-component {
     padding-right: 5rem;
     border-radius: unset;
   }
-
-  .shirt .btn-option:nth-child(1)::before {
-    content: "Small";
-  }
 }
 @media only screen and (max-width: 600px) {
   .shirt .btn-option:nth-child(4), .shirt .btn-option:nth-child(5) {
