@@ -43,22 +43,31 @@ for(var i = 0;i < newb.length; ++i) {
   newb[i].setAttribute("class", "btn btn-option")
 }
 
+//Toggle class on and off
 newb.forEach( (btClickEv,_,buttons) =>  {
   btClickEv.onclick = () =>
-    buttons.forEach(bt=>bt.classList.toggle('on',bt===btClickEv))
+    buttons.forEach(bt=>
+      {
+        if(window.innerWidth < 768) {
+        document.querySelector("#desc span").textContent = btClickEv.textContent
+      } else document.querySelector("#desc span").textContent = ""
+      bt.classList.toggle('on',bt===btClickEv)
+    })
+      
 })
 
+//Changes text when window's width is below 768px
 function append () {
   if(window.innerWidth < 768) {
-    var arSizes = ["Small", "Medium", "Large", "X-Large", "Large", "XX-Large"]
-    for(var i = 0; i <= arSizes.length; i++) {
-      newb[i].textContent = arSizes[i]
-    }
+    var arSizes = ["Small", "Medium", "Large", "X-Large", "XX-Large"]
+     newb.forEach( (button, index)=>button.textContent=arSizes[index]
+     )
   } 
 }
 
 window.addEventListener('resize', append())
 
+//Appends 1-30 to the dropdown list
 var select = document.querySelector(".quan")
 var contents
 
@@ -67,4 +76,3 @@ for(var i=1; i<=30;i++) {
 }
 
 select.innerHTML = contents
-
