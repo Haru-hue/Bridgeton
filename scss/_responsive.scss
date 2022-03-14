@@ -30,8 +30,12 @@
 }
 
 @media only screen and (max-width:600px) {
+    .view {
+        overflow-y: auto;
+    }
     .shirt .btn-option:nth-child(4), .shirt .btn-option:nth-child(5) {
-        margin-top: 5px;
+        margin-top: 4px;
+        white-space: nowrap;
     }
     header-component .navbar-nav .nav-link, header-component .navbar-nav .nav-item i {
         font-size: 2.75vw;
@@ -241,26 +245,39 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
-    @media screen and (min-width: 992px) {
-        .deals .deal h2 ,.explore .ex-text {
-            text-indent: unset;
-        }
-        .newsletter .row .news {
-            padding-left: 8rem;
-        }
-        .explore .row, .deals .row {
-            --bs-gutter-x: 3.5rem;
-            margin-left: calc(var(--bs-gutter-x) * -1.25);
-        }
-        .des-box .des span {
-            white-space: unset;
-        }
-        
+@media screen and (min-width: 992px) {
+    .deals .deal h2 ,.explore .ex-text {
+        text-indent: unset;
+    }
+    .newsletter .row .news {
+        padding-left: 8rem;
+    }
+   .explore .row, .deals .row {
+        --bs-gutter-x: 3.5rem;
+        margin-left: calc(var(--bs-gutter-x) * -1.25);
+    }
+    .des-box .des span {
+        white-space: unset;
+    }
+    .view {
+        position: absolute;
+        top: 16%;
+        left: 3%;
+        grid-template-columns: 100px;
+        grid-template-rows: repeat(4, 100px);
+        grid-row-gap: 4.5px;
+    }
+    .view > div {
+        border: 0.25px solid grey;
     }
 }
 
 @media screen and (min-width: 1200px) {
+    .view {
+        position: absolute;
+        top: 14%;
+        left: 3%;
+    }
     .deals .deal h2 {
         text-indent: 2rem;
     }

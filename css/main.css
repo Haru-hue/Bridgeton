@@ -154,10 +154,10 @@ footer-component {
 
 .quan {
   position: relative;
-  top: -9%;
-  padding: 0px 12.5px;
+  top: -11%;
+  padding: 10px 12.5px;
   margin-left: 6.5rem;
-  border: 2px solid black;
+  border-radius: 12.5px;
   box-sizing: border-box;
 }
 
@@ -285,8 +285,13 @@ footer-component {
   }
 }
 @media only screen and (max-width: 600px) {
+  .view {
+    overflow-y: auto;
+  }
+
   .shirt .btn-option:nth-child(4), .shirt .btn-option:nth-child(5) {
-    margin-top: 5px;
+    margin-top: 4px;
+    white-space: nowrap;
   }
 
   header-component .navbar-nav .nav-link, header-component .navbar-nav .nav-item i {
@@ -541,7 +546,7 @@ footer-component {
     font-size: 12.5px;
   }
 }
-@media screen and (max-width: 1200px) and (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .deals .deal h2, .explore .ex-text {
     text-indent: unset;
   }
@@ -558,8 +563,27 @@ footer-component {
   .des-box .des span {
     white-space: unset;
   }
+
+  .view {
+    position: absolute;
+    top: 16%;
+    left: 3%;
+    grid-template-columns: 100px;
+    grid-template-rows: repeat(4, 100px);
+    grid-row-gap: 4.5px;
+  }
+
+  .view > div {
+    border: 0.25px solid grey;
+  }
 }
 @media screen and (min-width: 1200px) {
+  .view {
+    position: absolute;
+    top: 14%;
+    left: 3%;
+  }
+
   .deals .deal h2 {
     text-indent: 2rem;
   }
